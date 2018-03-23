@@ -18,4 +18,3 @@ public class Person implements Serializable {
     }
 }
  
-// www.caveofprogramming.com
