@@ -1,6 +1,6 @@
 class Thing {
     public final static int LUCKY_NUMBER = 7;
-     
+    
     public String name;
     public static String description;
      
