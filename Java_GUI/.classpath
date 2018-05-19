@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing 84 - Using a Visual Designer/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing1 - Hello World/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing10 - Text Fields and Labels/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing11 - GridBagLayout/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing12 - Events/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing13 - List Boxes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing14 - Working With List Data/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing15 - Combo Boxes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing16 - Check Boxes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing17 - Radio Buttons/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing18 - Menus/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing19 - CheckBox Menus/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing2 - BorderLayout and Text Areas/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing20 - Mnemonics and Accelerators/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing21 - Option Panes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing22 - File Choosers/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing23 - Filtering File Choosers/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing24 - Data Model/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing25 - Controller/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing26 - Tables/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing27 - Serialization/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing28 - Popup Menus/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing29 - Table Row Selection/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing3 - Button Clicks/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing30 - Deleting Table Rows/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing31 - Dialogs/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing32 - Spinners/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing33 - Passwords/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing34 - Preferences/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing35 - Prettifying Dialogs/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing36 - Connecting to Databases/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing37 - Getting Values from Databases/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing38 - Inserting Values into Databases/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing39 - Updating Databases/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing4 - Custom Components/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing40 - Retrieving Multiple Database Rows/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing41 - Wiring in the Database Code/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing42 - Intercepting Window Closing/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing43 - Button Icons/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing44 - JToolbar/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing45 - Split Panes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing46 - Tabbed Panes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing47 - Trees/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing48 - Tree Selection/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing49 - Associating Data with Tree Nodes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing5 - Simple Toolbars/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing50 - Tree Cell Icons/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing51 - Custom Tree Cell Renderers/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing52 - Custom Tree Cell Editors/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing53 - Getting Data From Trees/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing54 - Simulated Message Server/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing55 - Swing Multithreading/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing56 - Modal Dialogs/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing57 - Progress Bars/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing58 - Distributing Your Application/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing59 - Adding Text to Progress Bars/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing6 - Communication/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing60 - Cancelling Threads/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing61 - Setting the Cursor/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing62 - Nested Split Panes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing63 - Responding to Tab Selections/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing64 - List Renderers/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing65 - Responding to List Selections/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing66 - Setting Fonts/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing67 - Loading Font Files/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing68 - Configuring the Database Connection/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing69 - Editable Tables/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing7 - Listeners/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing70 - Using Checkboxes in Tables/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing71 - Table Cell Renderers/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing72 - Table Cell Editors/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing73 - Applets/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing74 - User Drawn Components/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing75 - Drawing Shapes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing76 - Deploying Applets/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing77 - Timers/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing78 - Basic Animation/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing79 - Smoothing Your Animation/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing8 - Size/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing80 - Mouse Listeners/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing81 - Hiding the Mouse/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing82 - Key Listeners/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing83 - Handling Component Resizing/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing85 - CardLayout/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing86 - Collision Handling in Shapes/src"/>
+	<classpathentry kind="src" path="Java_Swing/workspace-clean/Swing9 - Borders/src"/>
+	<classpathentry kind="src" path="JavaFX/000_template"/>
+	<classpathentry kind="src" path="JavaFX/001_creatingASimpleWindow"/>
+	<classpathentry kind="src" path="JavaFX/002_handleUserEvents"/>
+	<classpathentry kind="src" path="JavaFX/003_anonymousInnerClassesAndLambdaExpressions"/>
+	<classpathentry kind="src" path="JavaFX/004_switchingScenes"/>
+	<classpathentry kind="src" path="JavaFX/005_creatingAlertBoxes"/>
+	<classpathentry kind="src" path="JavaFX/006_communicatingBetweenWindows"/>
+	<classpathentry kind="src" path="JavaFX/009_gridPane"/>
+	<classpathentry kind="src" path="JavaFX/010_extractAndValidateInput"/>
+	<classpathentry kind="src" path="JavaFX/011_checkBoxes"/>
+	<classpathentry kind="src" path="JavaFX/012_choiceBoxDropDownList"/>
+	<classpathentry kind="src" path="JavaFX/013_comboBox"/>
+	<classpathentry kind="src" path="JavaFX/015_listViews"/>
+	<classpathentry kind="src" path="JavaFX/016_treeView"/>
+	<classpathentry kind="src" path="JavaFX/018_tableView"/>
+	<classpathentry kind="src" path="JavaFX/020_tableViewAddingAndDeleting"/>
+	<classpathentry kind="src" path="JavaFX/024_menus"/>
+	<classpathentry kind="src" path="JavaFX/027_css"/>
+	<classpathentry kind="src" path="JavaFX/028_properties"/>
+	<classpathentry kind="src" path="JavaFX/029_binding"/>
+	<classpathentry kind="src" path="JavaFX/030_bindingPropertiesExample"/>
+	<classpathentry kind="lib" path="Java_Swing/workspace-clean/Swing58 - Distributing Your Application/lib/mysql-connector-java-5.1.20-bin.jar"/>
+	<classpathentry kind="output" path="Java_Swing/workspace-clean/Swing 84 - Using a Visual Designer/bin"/>
+</classpath>
