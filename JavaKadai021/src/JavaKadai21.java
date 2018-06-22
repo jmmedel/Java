@@ -1,4 +1,9 @@
 
+
+/* 
+ * 
+ * done
+ * */
 public class JavaKadai21 {
 
 	public static void main(String[] args) {
