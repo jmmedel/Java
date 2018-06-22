@@ -1,4 +1,4 @@
-
+// done
 import java.math.*;
 import java.util.*;
 public class JavaKadai051 {
@@ -13,16 +13,19 @@ public class JavaKadai051 {
 		while(true) {
 			System.out.print("®”’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢[[„");
 		  int num1 = sc.nextInt();
-		  if(num1 %7 != 0 && num1 < 0) {
+		  if(num1 %7 != 0 && num1 >0 ) {
 			  System.out.println("³‚Ì”‚Å‚V‚Ì”{”‚Å‚ ‚è‚Ü‚¹‚ñ");
 			    
 		  }
-		  if (num1 == 0) {
+		  else if (num1 == 0) {
 			  System.out.println("0 ‚Å‚·");
+			 
+			  
 		  }
 		  else if (num1 <0) {
 			  System.out.println("•‰‚Ì”‚Å‚·");
 		  }
+		  
 		 
 		 
 		}
