@@ -1,4 +1,5 @@
 // Done
+//Done
 import java.util.Scanner;
 
 public class JavaKadai068 {
