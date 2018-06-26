@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>006 Interfaces and Abstract Base Classes</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 1, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 708566, "assessment_type": "multiple-choice", "created": "2015-10-13T10:22:32Z", "prompt": {"relatedLectureIds": "", "answers": ["A)  A > II, B > III, C > I, D > IV ", "B)  A > II, B > III, C > IV, D > I ", "C)  A > III, B > II, C > I, D > IV ", "D)  A > III, B > II, C > IV, D > I "], "question": "<p>Match the description on the left to the code on the right</p><p><img src=\"https://udemy-images.s3.amazonaws.com:443/redactor/2015-10-13_10-19-53-78a23a4307c08fb8f0c74c2edfd6c7b2/Capture-19.JPG\"></p>", "feedbacks": ["", "", "", ""]}, "correct_response": ["c"], "updated": "2015-11-14T11:43:26Z", "section": "", "question_plain": "Match the description on the left to the code on the right", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>

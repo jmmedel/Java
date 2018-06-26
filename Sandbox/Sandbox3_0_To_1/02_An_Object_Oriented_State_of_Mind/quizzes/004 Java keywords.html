@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>004 Java keywords</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 1, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 708562, "assessment_type": "multiple-choice", "created": "2015-10-13T10:14:24Z", "prompt": {"relatedLectureIds": "", "question": "<p>Which of the statements is NOT true for the variable set up below?<img src=\"https://udemy-images.s3.amazonaws.com:443/redactor/2015-10-13_10-11-54-b6dc5e0be8d6496ee112ba375d49112f/Capture-17.JPG\"></p>", "feedbacks": ["Use of public access modifier", "Int", "Final means the value of the variable cannot be changed, so this statement is not true", "Use of static keyword"], "answers": ["A) Its a shared variable of it’s class that can be accessed by any other class", "B) Its of the type integer", "C) It’s value can be changed ", "D) It’s value is the same for all objects of it’s class"]}, "correct_response": ["c"], "updated": "2015-10-13T10:14:24Z", "section": "", "question_plain": "Which of the statements is NOT true for the variable set up below?", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>

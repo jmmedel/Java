@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>012 Inheritance</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 1, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 708834, "assessment_type": "multiple-choice", "created": "2015-10-13T12:52:25Z", "prompt": {"feedbacks": ["", "", "", ""], "answers": ["A) It will throw an error", "B) Print to screen “My area is 0.0”", "C) Print to screen “My area is 0”\n\n", "D) None of the above"], "question": "<p>myCircle and myLittleDot classes are setup as on the right. What is the output of the below code?</p><p><img src=\"https://udemy-images.s3.amazonaws.com:443/redactor/2015-10-13_12-51-19-25f751562ba15e0bedeb2cd551c3d965/Capture-32.JPG\"></p>", "relatedLectureIds": ""}, "correct_response": ["b"], "updated": "2015-10-13T12:52:45Z", "section": "", "question_plain": "myCircle and myLittleDot classes are setup as on the right. What is the output of the below code?", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>
