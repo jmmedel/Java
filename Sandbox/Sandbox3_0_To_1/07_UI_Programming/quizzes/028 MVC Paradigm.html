@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>028 MVC Paradigm</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 1, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 708782, "assessment_type": "multiple-choice", "created": "2015-10-13T12:17:38Z", "prompt": {"answers": ["A) A > 1, B > 2,  C > 3, D > 4 ", "B) A > 2, B > 3,  C > 4, D > 1 ", "C) A > 3, B > 2,  C > 4, D > 1 ", "D) A > 3, B > 2,  C > 1, D > 4"], "question": "<p>Match the parts of the code to the descriptions below</p><p>A.The event object with the context of the event</p><p><span></span>B.The event listener</p><p><span></span>C.The actions to be performed when the event occurs</p><p><span></span>D.Registering to listen to an event</p><p><img src=\"https://udemy-images.s3.amazonaws.com:443/redactor/2015-10-13_12-15-15-7ce48835bdf59b6f994449a2c04e36f3/Capture-30.JPG\"></p>", "feedbacks": ["", "", "", ""], "relatedLectureIds": ""}, "correct_response": ["c"], "updated": "2015-10-13T12:42:48Z", "section": "", "question_plain": "Match the parts of the code to the descriptions belowA.The event object with the context of the eventB.The event listenerC.The actions to be performed when the event occursD.Registering to listen to an event", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>

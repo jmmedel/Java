@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>025 Question 24 - Annotation</title>
+    </head>
+    <body>
+
+        <div style="background-color:#ffffaa" align = "center">
+            <script>
+                var c = '';
+                var opt = '';
+                var n = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+                var quiz = {"count": 1, "next": null, "previous": null, "results": [{"_class": "assessment", "id": 708758, "assessment_type": "multiple-choice", "created": "2015-10-13T12:04:18Z", "prompt": {"question": "<p>@FunctionalInterface below is underlined by Intellij because</p><p><img src=\"https://udemy-images.s3.amazonaws.com:443/redactor/2015-10-13_12-03-10-ab880f3acbd38e92c77b614460e545ba/Capture-28.JPG\"></p>", "answers": ["A) Itâ€™s a comment and should be using // instead of @", "B) IShape has 3 methods defined and it expects to see a single method", "C) IShape is an interface but it has a method with an implementation \n", "D) It expects to see @Override instead of @FunctionalInterface"], "relatedLectureIds": "", "feedbacks": ["Its an annotation which is like a comment, but its understood by the compiler", "A Functional Interface is another name for an interface with a single method", "An Interface default method can have an implementation", "@Override is an annotation used just before overriding a method of the interface or base class"]}, "correct_response": ["b"], "updated": "2015-10-13T12:04:18Z", "section": "", "question_plain": "@FunctionalInterface below is underlined by Intellij because", "related_lectures": [], "original_assessment_id": 0}]};
+
+                for (var i = 0; i < quiz.results.length; i++) {
+
+                    var question = '<font color="ff0000"><br><h3>Question-' + i + ': </h3> <b>' + quiz.results[i].prompt.question + '</b> <br>';
+
+                    for (var j = 0; j < quiz.results[i].prompt.answers.length; j++) {
+
+                        opt = opt.concat(quiz.results[i].prompt.answers[j] ? '<p style="cursor: pointer" onclick="this.style=\'font-weight: bold; color: #CE534D\'">' + n[j] + ': ' + quiz.results[i].prompt.answers[j].toString().replace(/,/g, '<br>') + '</p>' : '<br>');
+                    }
+                    var ans = quiz.results[i].correct_response ? '<p> <br> <input style="cursor: pointer" type="button" onclick="this.value=\'Answer is: ' + quiz.results[i].correct_response.toString() + '\'" value="Show Answer"></input> </p>' : '<br>';
+                    c = c.concat(question, opt, ans);
+                    opt = ''
+                    }
+                document.write(c);
+            </script>
+        </div>
+    </body>
+    </html>
