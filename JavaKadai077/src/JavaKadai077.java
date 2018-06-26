@@ -1,3 +1,4 @@
+//Done
 import java.util.*;
 public class JavaKadai077 {
 
@@ -46,6 +47,7 @@ public class JavaKadai077 {
 					System.out.printf("イ　＝%.2f \n",(countB/80)*100);
 					System.out.printf("ウ　＝%.2f \n",(countC/80)*100);
 					System.out.printf("エ　＝%.2f \n",(countD/80)*100);
+					System.out.printf("アイウエ　でもない選択した　＝ %.2f \n", (countErr/80)*100);
 				}
 			
 			
