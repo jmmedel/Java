@@ -10,10 +10,10 @@ public class JavaKadai073 {
 		while(true)
 		{
 			
-			System.out.println("data-enter");
+			System.out.println("データを入力してくださいーー＞");
 			int num1 = sc.nextInt();
 			total = total + num1;
-			System.out.println( "Total = "+ total);
+			System.out.println( "合計は　 "+ total+"　なりました");
 		}
 		
 	}
