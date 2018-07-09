@@ -1,3 +1,4 @@
+//Done
 import java.util.*;
 public class JavaKadai073 {
 
@@ -14,6 +15,9 @@ public class JavaKadai073 {
 			int num1 = sc.nextInt();
 			total = total + num1;
 			System.out.println( "‡Œv‚Í@ "+ total+"@‚È‚è‚Ü‚µ‚½");
+			if(total >100) {
+				break;
+			}
 		}
 		
 	}

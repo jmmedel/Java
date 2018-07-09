@@ -1,3 +1,4 @@
+//Dome
 import java.util.*;
 public class JavaKadai071 {
 
