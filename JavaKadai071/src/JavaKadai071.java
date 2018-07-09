@@ -11,8 +11,8 @@ public class JavaKadai071 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int row = 2;
-		int column = 2;
+		int row = 4;
+		int column = 4;
 		int[][] matrix = new int[row][column];
 		int num0 = 0;
 		int num1 = 0;
