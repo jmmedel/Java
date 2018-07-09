@@ -22,7 +22,7 @@ public class JavaKadai071 {
 		   for (int i = 0; i < row; i++) {
 		     result=result+"\n";
 		       for (int j = 0; j < column; j++) {
-		         System.out.println("Row [" + i + "]:  Column " + j + " :");
+		         //System.out.println("Row [" + i + "]:  Column " + j + " :");
 		         matrix[i][j] = sc.nextInt();
 		         if(matrix[i][j] == -1) {
 		        	 minus1++;
