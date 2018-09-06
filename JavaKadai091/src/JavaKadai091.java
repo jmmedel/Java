@@ -10,7 +10,7 @@ public class JavaKadai091 {
 		int[] Data3 = {42,67,45,21,30,83,55};
 		int Min;
 		Min = getMin(Data1,Data2);
-		System.out.println("");
+		System.out.println("2つのデータの最小値は"+ Min + "です");
 		Min = getMin(Data3);
 		System.out.println("配列のデータの最小値は"+ Min + "です");
 		
