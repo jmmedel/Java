@@ -20,8 +20,13 @@ public class JavaKadai085 {
 
 	public static String toWareki(int year) {
 		// TODO Auto-generated method stub
+		String  wa = null;
+		if (year > 1989 ) {
+		wa = "•½¬" + (year - 1988) + "”N";
+		} 
+		return wa;
 		
-		return null;
+		
 	}
 
 }
