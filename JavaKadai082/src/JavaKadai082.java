@@ -16,7 +16,14 @@ public class JavaKadai082 {
 
 	private static void dispMax(double a, double b) {
 		// TODO Auto-generated method stub
-		
+		if (a > b) {
+			System.out.println(a-b);
+		}else if(a<b) {
+			System.out.println(b-a);
+		}else {
+			System.out.println("—¼•û‚ª“™‚µ");
+		}
+			
 	}
 
 }
