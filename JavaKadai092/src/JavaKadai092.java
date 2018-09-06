@@ -16,22 +16,26 @@ public class JavaKadai092 {
 	private static double getAvg(int[] data, int i) {
 		// TODO Auto-generated method stub
 		double sum = 0;
-		
+		double ans = 0;
+		if(i>data.length) {
+			i = data.length;
+		}
 		for (int j = 0; j < i; j++) {
 			sum += data[j];
 		}
-		sum += sum/i;
-		return sum;
+		ans += sum/i;
+		return ans;
 	}
 
 	private static double getAvg(int[] data) {
 		// TODO Auto-generated method stub
 		double sum = 0;
+		double ans = 0;
 		for (int i = 0; i < data.length; i++) {
 			sum += data[i];
 		}
-		sum += sum/data.length;
-		return sum;
+		ans+= sum/data.length;
+		return ans;
 	}
 
 }
