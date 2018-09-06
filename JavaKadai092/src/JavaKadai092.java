@@ -13,9 +13,15 @@ public class JavaKadai092 {
 				+ getAvg(Data,15) + "‚Å‚·");
 	}
 
-	private static String getAvg(int[] data, int i) {
+	private static double getAvg(int[] data, int i) {
 		// TODO Auto-generated method stub
-		return null;
+		double sum = 0;
+		
+		for (int j = 0; j < i; j++) {
+			sum += data[j];
+		}
+		sum += sum/i;
+		return sum;
 	}
 
 	private static double getAvg(int[] data) {
