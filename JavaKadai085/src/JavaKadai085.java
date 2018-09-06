@@ -12,10 +12,15 @@ public class JavaKadai085 {
 		System.out.printf("西暦年を入力してくださいーー＞");
 		year = stdin.nextInt();
 		str = toWareki(year);
+		if(str == null)
+			System.out.printf("変かは１８６８年以降です\n");
+		else System.out.printf("西暦%d年%sです。この年に生まれた人は今年%d歳になります\n", year,str,nyear-year);
+		
 	}
 
 	public static String toWareki(int year) {
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
