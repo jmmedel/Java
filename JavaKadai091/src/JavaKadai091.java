@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Arrays;
 public class JavaKadai091 {
 
 	public static void main(String[] args) {
@@ -18,12 +18,20 @@ public class JavaKadai091 {
 
 	private static int getMin(int[] data3) {
 		// TODO Auto-generated method stub
-		return 0;
+		int min = data3[0];
+		for (int i = 0; i < data3.length; i++) {
+			if(min > data3[i]) {
+				min = data3[i];
+			}
+		}
+		return min;
 	}
 
 	private static int getMin(int data1, int data2) {
 		// TODO Auto-generated method stub
-		return 0;
+		
+		
+		return data1 < data2 ? data1 : data2 ;
 	}
 
 }
