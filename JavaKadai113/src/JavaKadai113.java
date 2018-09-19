@@ -29,7 +29,7 @@ class AMRadio {
 	}
 	public void getFrequency() {
 		
-		System.out.println("Frequency is " + this.frequency);
+		System.out.println("Frequency is " + this.frequency + "khz");
 	}
 	public void setFrequency(int frequency) {
 		this.frequency = frequency;
