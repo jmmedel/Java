@@ -1,18 +1,25 @@
-
+//Not done
 public class JavaKadai102 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		for (int i = 0; i < 1; i++) {
-			if(args[i] == "+") {
-				Addition(args);
-			}
+		String argument = args[0];
+		System.out.println(argument);
+		if(argument.contentEquals("+")) {
+			Addition(args);
+		} else if(argument.contentEquals("-")) {
+			Subtraction(args);
+		} else if(argument.contentEquals("/")) {
+			Division(args);
+		} else if(argument.contentEquals("*")) {
+			Multiplication(args);
 		}
 		
 		
-		//Subtraction(args);
-		//Division(args);
-		//Multiplication(args);
+		
+		
+		
+		
 		
 	}
 	
@@ -60,7 +67,7 @@ public class JavaKadai102 {
 	}
 	
 	public static void Multiplication(String[] args) {
-		 int ans;
+		 int ans = 0;
 	   	 int i;
 	   	 ans = Integer.parseInt(args[1]);          // Initialize the running sum
 	    
