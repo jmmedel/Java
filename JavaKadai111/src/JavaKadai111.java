@@ -15,7 +15,16 @@ public class JavaKadai111 {
     	 	 ans = stdin.nextInt();
     	    s.pause();
     	    
-    	    System.out.println("elapsed time in milliseconds: " + s.getElapsedTime());
+    	    if(s.getElapsedTime() < 0.5) {
+    	    System.out.printf("elapsed time in sec:  " + s.getElapsedTime() + "正確");
+    	    }
+    	    else if(s.getElapsedTime() < 5) {
+    	    	System.out.print("elapsed time in sec: " + s.getElapsedTime() + "ほぼ正確");
+    	    }
+    	    else {
+    	    	System.out.print("elapsed time in sec: " + s.getElapsedTime() + "不正確");
+    	    }
+    	    	
     }
     
 } 
@@ -85,13 +94,14 @@ public class JavaKadai111 {
     /**
      * @return the total elapsed time in milliseconds
      */
-    public final long getElapsedTime() {
+    public final double getElapsedTime() {
         synchronized (this) {
-            long currentElapsedTime = 0;
+            double currentElapsedTime = 0;
             if (isRunning) {
                 currentElapsedTime = System.currentTimeMillis() - startTime;
             }
-            return previousElapsedTime + currentElapsedTime;
+            
+            return  (previousElapsedTime + currentElapsedTime) / 1000;
         }
     }
     
