@@ -26,11 +26,11 @@ public class JavaKadai102 {
 	public static void Addition(String[] args) {
 		 int sum;
 	   	 int i;
-	   	 sum = Integer.parseInt(args[1]);          // Initialize the running sum
+	   	 sum = Integer.parseInt(args[1]);          
 	    
 	   	 for ( i = 2; i < args.length; i++ )
 	   	 {
-	   	    sum = sum + Integer.parseInt(args[i]);   // Add args[i] to running sum  
+	   	    sum = sum + Integer.parseInt(args[i]);   
 	 
 	   	 }
 	    
@@ -41,11 +41,11 @@ public class JavaKadai102 {
 	public static void Subtraction(String[] args) {
 		 int ans;
 	   	 int i;
-	   	 ans = Integer.parseInt(args[1]);          // Initialize the running sum
+	   	 ans = Integer.parseInt(args[1]);         
 	    
 	   	 for ( i = 2; i < args.length; i++ )
 	   	 {
-	   	    ans = ans - Integer.parseInt(args[i]);   // Add args[i] to running sum  
+	   	    ans = ans - Integer.parseInt(args[i]);   
 	 
 	   	 }
 	    
@@ -55,11 +55,11 @@ public class JavaKadai102 {
 	public static void Division(String[] args) {
 		 int ans;
 	   	 int i;
-	   	 ans = Integer.parseInt(args[1]);          // Initialize the running sum
+	   	 ans = Integer.parseInt(args[1]);         
 	    
 	   	 for ( i = 2; i < args.length; i++ )
 	   	 {
-	   	    ans = ans / Integer.parseInt(args[i]);   // Add args[i] to running sum  
+	   	    ans = ans / Integer.parseInt(args[i]);   
 	 
 	   	 }
 	    
@@ -69,11 +69,10 @@ public class JavaKadai102 {
 	public static void Multiplication(String[] args) {
 		 int ans = 0;
 	   	 int i;
-	   	 ans = Integer.parseInt(args[1]);          // Initialize the running sum
-	    
+	   	 ans = Integer.parseInt(args[1]);         
 	   	 for ( i = 2; i < args.length; i++ )
 	   	 {
-	   	    ans = ans * Integer.parseInt(args[i]);   // Add args[i] to running sum  
+	   	    ans = ans * Integer.parseInt(args[i]);   
 	 
 	   	 }
 	    
