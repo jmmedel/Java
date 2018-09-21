@@ -1,3 +1,4 @@
+//done
 import java.util.*;
 public class JavaKadai082 {
 

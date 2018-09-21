@@ -1,4 +1,4 @@
-
+//done
 public class JavaKadai081 {
 
 	public static void main(String[] args) {
