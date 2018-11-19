@@ -1,6 +1,7 @@
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import java.awt.Color;
 
 public class GuiRei01 {
 
@@ -34,6 +35,8 @@ public class GuiRei01 {
 	 */
 	private void initialize() {
 		frmh = new JFrame();
+		frmh.getContentPane().setBackground(Color.CYAN);
+		frmh.setBackground(Color.CYAN);
 		frmh.setTitle("0H01007\u52A0\u8CC0\u5C4B\u3000\u30B8\u30E3\u30F3\u30E1\u30C7\u30EB");
 		frmh.setBounds(100, 100, 450, 300);
 		frmh.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
