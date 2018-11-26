@@ -6,10 +6,13 @@ import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import javax.swing.JRadioButton;
 import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.border.TitledBorder;
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class GUIRei05 {
 
@@ -21,6 +24,7 @@ public class GUIRei05 {
 	private JLabel DispLabel;
 	private JButton ReadButton;
 	private JButton EndButton;
+	private ButtonGroup bg;
 
 	/**
 	 * Launch the application.
@@ -55,6 +59,7 @@ public class GUIRei05 {
 		frmh.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel BloodPanel = new JPanel();
+		BloodPanel.setBackground(Color.YELLOW);
 		BloodPanel.setBorder(new TitledBorder(null, "\u8840\u6DB2\u578B", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		frmh.getContentPane().add(BloodPanel, BorderLayout.NORTH);
 		BloodPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
@@ -72,11 +77,32 @@ public class GUIRei05 {
 		BRadioButton = new JRadioButton("B\u578B");
 		BloodPanel.add(BRadioButton);
 		
+		bg = new ButtonGroup();
+		bg.add(ARadioButton);
+		bg.add(BRadioButton);
+		bg.add(ORadioButton);
+		bg.add(ABRadioButton);
+		
 		JPanel ButtonPanel = new JPanel();
 		frmh.getContentPane().add(ButtonPanel, BorderLayout.SOUTH);
 		ButtonPanel.setLayout(new BoxLayout(ButtonPanel, BoxLayout.X_AXIS));
 		
 		ReadButton = new JButton("\u5360\u3044");
+		ReadButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				if(ARadioButton.isSelected()) {
+					DispLabel.setText("Aå^ÇÃÇ†Ç»ÇΩÇÕô{í†ñ Ç≈Ç∑");
+				}else if(BRadioButton.isSelected()) {
+					DispLabel.setText("Bå^ÇÃÇ†Ç»ÇΩÇÕó‚ê√Ç≈Ç∑");
+				}else if(ORadioButton.isSelected()) {
+					DispLabel.setText("Oå^ÇÃÇ†Ç»ÇΩÇÕÉRÉ~ÉÖÉjÉPÅ[ÉVÉáÉìè„éËÇ≈Ç∑");
+				}else if(ABRadioButton.isSelected()) {
+					DispLabel.setText("ABå^ÇÃÇ†Ç»ÇΩÇÕãCï™âÆÇ≈Ç∑");
+				}
+				
+			}
+		});
 		ReadButton.setToolTipText("\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u5360\u3044");
 		ButtonPanel.add(ReadButton);
 		
@@ -87,7 +113,7 @@ public class GUIRei05 {
 		DispLabel = new JLabel("\u3053\u3053\u306B\u5360\u3044\u7D50\u679C\u3092\u8868\u793A\u3057\u307E\u3059");
 		DispLabel.setOpaque(true);
 		DispLabel.setBackground(Color.YELLOW);
-		frmh.getContentPane().add(DispLabel, BorderLayout.WEST);
+		frmh.getContentPane().add(DispLabel, BorderLayout.CENTER);
 	}
 
 }
