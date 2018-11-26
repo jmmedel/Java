@@ -1,6 +1,8 @@
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
 
 public class GUIRei05 {
 
@@ -37,6 +39,9 @@ public class GUIRei05 {
 		frmh.setTitle("0H01007 \u52A0\u8CC0\u5C4B\u3000\u30B8\u30E3\u30F3\u30E1\u30C7\u30EB");
 		frmh.setBounds(100, 100, 450, 300);
 		frmh.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JPanel panel = new JPanel();
+		frmh.getContentPane().add(panel, BorderLayout.NORTH);
 	}
 
 }
