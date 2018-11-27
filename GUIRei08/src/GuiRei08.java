@@ -31,7 +31,7 @@ public class GUIRei08 extends JFrame {
 	};
 	
 	
-	private String [][] CityName= {{"a"}};
+	private String [][] CityName= {{""}};
 	private JScrollPane AreaScrollPane;
 	private JLabel AreaLabel;
 	private JLabel PrefectureLabel;
