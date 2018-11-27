@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 
 public class GUIRei10 {
 
-	private JFrame frame;
+	private JFrame frmh;
 
 	/**
 	 * Launch the application.
@@ -14,7 +14,7 @@ public class GUIRei10 {
 			public void run() {
 				try {
 					GUIRei10 window = new GUIRei10();
-					window.frame.setVisible(true);
+					window.frmh.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -33,9 +33,10 @@ public class GUIRei10 {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmh = new JFrame();
+		frmh.setTitle("0H01007 \u52A0\u8CC0\u5C4B\u30B8\u30E3\u30F3\u30E1\u30C7\u30EB");
+		frmh.setBounds(100, 100, 342, 228);
+		frmh.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }
