@@ -81,7 +81,7 @@ public class GUIRei06 {
 				String id =IdTextField.getText();
 				@SuppressWarnings("deprecation")
 				String pass= PassPasswordField.getText();
-				if(id.equals("john")&& pass.equals("123456")) {
+				if(id.equals("0h01007")&& pass.equals("KOBEDEN")) {
 					JOptionPane.showMessageDialog(null, "正しいユーザーＩＤとパスワードです！", "判定結果", JOptionPane.OK_OPTION);
 				} else {
 					JOptionPane.showMessageDialog(null,"ユーザーＩＤかパスワードが間違いています", "判定結果",JOptionPane.WARNING_MESSAGE);
