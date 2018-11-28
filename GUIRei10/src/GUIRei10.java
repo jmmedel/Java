@@ -6,6 +6,8 @@ import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
 import  java.awt.Component;
@@ -78,13 +80,49 @@ public class GUIRei10 {
 					
 					try {
 						
+						if(fos!=null) {
+							fos.close();
+						}
+						
 					} catch (Exception e3) {
 						// TODO: handle exception
+						e3.printStackTrace();
 					}
 				}
-				
+				System.exit(0);
 			}
 		});
+		
+		BufferedInputStream bin = null;
+		try {
+			bin = new BufferedInputStream(new FileInputStream("GUIRei10.properties"));
+			Prop.load(bin);
+			
+			int x=Integer.parseInt(Prop.getProperty("x"));
+			int y=Integer.parseInt(Prop.getProperty("y"));
+			int w=Integer.parseInt(Prop.getProperty("w"));
+			int h=Integer.parseInt(Prop.getProperty("h"));
+			frmh.setSize(w,h);
+			frmh.setLocation(x,y);
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally {
+			
+			try {
+				
+				if(bin!=null) {
+					bin.close();
+				}
+			} catch (Exception e2) {
+				// TODO: handle exception
+				e2.printStackTrace();
+			}
+		}
+		
+		
 		frmh.getContentPane().add(EndButton, BorderLayout.SOUTH);
 		
 		DispLabel = new JLabel("\u6A2A\u4F4D\u7F6E\uFF1A\uFF0A\uFF0A\uFF0A\u3001\u7E26\u4F4D\u7F6E\uFF1A\uFF0A\uFF0A\uFF0A\u3001\u5E45\uFF1A\uFF0A\uFF0A\uFF0A\u3001\u9AD8\u3055\uFF1A\uFF0A\uFF0A\uFF0A");
