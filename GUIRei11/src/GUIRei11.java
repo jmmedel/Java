@@ -9,6 +9,7 @@ public class GUIRei11 {
 
 	private JFrame frmh;
 	private ImageIcon img=new ImageIcon("C:\\Users\\kagaya john\\Desktop\\Git_Java\\GUIRei11\\src\\yuru05.jpg");
+	private JLabel DispLabel;
 	/**
 	 * Launch the application.
 	 */
@@ -41,16 +42,13 @@ public class GUIRei11 {
 		frmh.setBounds(100, 100, 393, 242);
 		frmh.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmh.getContentPane().setLayout(null);
-		
-		JLabel DispLabel = new JLabel("");
-		DispLabel.setBounds(69, 25, 126, 115);
-		frmh.getContentPane().add(DispLabel);
 		DispLabel = new JLabel(img);
 		DispLabel.setBounds(50,25,151,115);
 		frmh.getContentPane().add(DispLabel);
 		
 		JLabel lblNewLabel = new JLabel("\u30E6\u30FC\u30B9\u30B1\u30FC\u30B9\u56F3\u306E\u30A2\u30AF\u30BF\u30FC");
-		lblNewLabel.setHorizontalTextPosition(SwingConstants.CENTER);
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setHorizontalTextPosition(SwingConstants.LEADING);
 		lblNewLabel.setBounds(221, 63, 126, 13);
 		frmh.getContentPane().add(lblNewLabel);
 		
