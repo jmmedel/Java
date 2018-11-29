@@ -40,7 +40,7 @@ public class GUIKadai03 extends JFrame {
 	 * Create the frame.
 	 */
 	public GUIKadai03() {
-		setTitle("0H01007 \u52A0\u8CC0\u5C4B\u3000\u30B8\u30E3\u30F3\u30E1\u30C7\u30EB");
+		setTitle("0H01007 \u52A0\u8CC0\u5C4B\u3000\u30B8\u30E3\u30F3\u30E1\u30C7\u30EB(\u8272\u82F1\u5358\u8A9E\u8868\u793A)");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
