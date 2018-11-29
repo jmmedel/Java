@@ -7,10 +7,16 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class GUIKadai02 extends JFrame {
 
 	private JPanel contentPane;
+	private JLabel lblNewLabel;
+	private JLabel lblNewLabel_1;
+	private JLabel lblNewLabel_2;
+	private JLabel lblNewLabel_3;
 
 	/**
 	 * Launch the application.
@@ -41,21 +47,34 @@ public class GUIKadai02 extends JFrame {
 		setContentPane(contentPane);
 		
 		JButton btnNewButton = new JButton("\u5FC5\u8981\u79D1\u76EE\u3092\u8868\u793A\u3057\u307E\u3059");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lblNewLabel.setVisible(true);
+				lblNewLabel_1.setVisible(true);
+				lblNewLabel_2.setVisible(true);
+				lblNewLabel_3.setVisible(true);
+				
+			}
+		});
 		contentPane.add(btnNewButton, BorderLayout.CENTER);
 		
-		JLabel lblNewLabel = new JLabel("Linux II");
+		lblNewLabel = new JLabel("Linux II");
 		contentPane.add(lblNewLabel, BorderLayout.WEST);
+		lblNewLabel.setVisible(false);
 		
-		JLabel lblNewLabel_1 = new JLabel("\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u6280\u8853");
+		lblNewLabel_1 = new JLabel("\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u6280\u8853");
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lblNewLabel_1, BorderLayout.NORTH);
+		lblNewLabel_1.setVisible(false);
 		
-		JLabel lblNewLabel_2 = new JLabel("JAVA");
+		lblNewLabel_2 = new JLabel("JAVA");
 		contentPane.add(lblNewLabel_2, BorderLayout.EAST);
+		lblNewLabel_2.setVisible(false);
 		
-		JLabel lblNewLabel_3 = new JLabel("\u30AD\u30E3\u30EA\u30A2\u30C7\u30B6\u30A4\u30F3");
+		lblNewLabel_3 = new JLabel("\u30AD\u30E3\u30EA\u30A2\u30C7\u30B6\u30A4\u30F3");
 		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lblNewLabel_3, BorderLayout.SOUTH);
+		lblNewLabel_3.setVisible(false);
 	}
 
 }
