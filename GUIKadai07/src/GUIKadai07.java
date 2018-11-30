@@ -1,3 +1,4 @@
+// Not Done
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -13,15 +14,23 @@ public class GUIKadai07 extends JFrame {
 
 	private JPanel contentPane;
 	private JLabel DispLabel;
-
+	private GUIKadai072 shimeinyuroku;
+	private static GUIKadai07 frame;
 	/**
 	 * Launch the application.
 	 */
+	
+	public void getName(String name) {
+		DispLabel.setText("éÅñºÅF " + name);
+		
+		
+	}
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					GUIKadai07 frame = new GUIKadai07();
+					 frame = new GUIKadai07();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -42,11 +51,27 @@ public class GUIKadai07 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		DispLabel = new JLabel("\u6C0F\u540D\uFF1A");
+		DispLabel = new JLabel("\u6C0F\u540D\uFF1A" );
 		DispLabel.setBounds(23, 39, 83, 30);
 		contentPane.add(DispLabel);
 		
 		JButton btnNewButton = new JButton("\u6C0F\u540D\u5165\u529B");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				EventQueue.invokeLater(new Runnable() {
+					public void run() {
+						try {
+							shimeinyuroku = new GUIKadai072();
+							shimeinyuroku.setVisible(true);
+							frame.setVisible(false);
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+					}
+				});
+				
+			}
+		});
 		btnNewButton.setBounds(23, 122, 91, 21);
 		contentPane.add(btnNewButton);
 		
