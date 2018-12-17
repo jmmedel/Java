@@ -62,10 +62,12 @@ public class GUIKadai072 extends JFrame {
 					public void run() {
 						try {
 							String s = textField.getText();
-							shimei.getName(s);
-							frames.setVisible(false);
+						
+							
 							shimei = new GUIKadai07();
+							shimei.getName(s);
 							shimei.setVisible(true);
+							frames.setVisible(false);
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
